@@ -106,6 +106,7 @@
             letter-spacing: -2px;
             background: linear-gradient(135deg, #fff 0%, #a5a5a5 100%);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 10px;
             text-align: center;
@@ -130,6 +131,24 @@
             position: relative;
             padding-bottom: 5px;
             border-bottom: 2px solid var(--secondary-glow);
+        }
+
+        /* Mobile Header Adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+                letter-spacing: -1px;
+            }
+
+            h2.role-title {
+                font-size: 0.9rem;
+                letter-spacing: 2px;
+                margin-bottom: 40px;
+            }
+
+            h3.section-title {
+                font-size: 1.3rem;
+            }
         }
 
         p,
@@ -372,9 +391,33 @@
             border: 1px solid white;
         }
 
+        .download-btn {
+            pointer-events: auto;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            padding: 10px 24px;
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .download-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: #fff;
+            transform: translateY(-2px);
+        }
+
         .contact-btn:hover {
             transform: scale(1.05);
-            background: #f0f0f0;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
         }
 
         /* Adjust layout to make room for fixed header */
@@ -517,7 +560,13 @@
         </div>
 
         <!-- Separate Contact Button to match reference -->
-        <a href="mailto:rafal.zielinskii@outlook.com" class="contact-btn" data-i18n="nav_contact">Contact Me</a>
+        <div style="display: flex; gap: 10px; pointer-events: auto;">
+            <a href="resources/cv_rafal_zielinski_java_software_developer.pdf" target="_blank" class="download-btn"
+                data-i18n="nav_download">
+                <span>↓</span> Download CV
+            </a>
+            <a href="mailto:rafal.zielinskii@outlook.com" class="contact-btn" data-i18n="nav_contact">Contact Me</a>
+        </div>
     </nav>
 
     <!-- Language Switcher -->
@@ -752,6 +801,7 @@
                 nav_exp: "Experience",
                 nav_skills: "Skills",
                 nav_contact: "Contact Me",
+                nav_download: "↓ Download CV",
 
                 // Header
                 role: "Java Software Developer / DevOps",
@@ -803,6 +853,7 @@
                 nav_exp: "Doświadczenie",
                 nav_skills: "Umiejętności",
                 nav_contact: "Kontakt",
+                nav_download: "↓ Pobierz CV",
 
                 // Header
                 role: "Programista Java / DevOps",
