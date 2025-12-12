@@ -545,6 +545,109 @@
             color: var(--primary-glow);
             border-bottom-color: var(--primary-glow);
         }
+
+        /* --- MOBILE NAV FIX --- */
+        @media (max-width: 768px) {
+            .navbar-container {
+                top: auto;
+                bottom: 20px !important;
+                padding: 0 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+
+            .nav-pill {
+                padding: 8px 15px;
+                background: rgba(18, 18, 28, 0.95);
+                backdrop-filter: blur(16px);
+                box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.5);
+                max-width: 100%;
+                overflow-x: auto;
+                justify-content: center;
+            }
+
+            .nav-item {
+                padding: 8px 12px;
+                font-size: 0.8rem;
+                white-space: nowrap;
+            }
+
+            .nav-extras {
+                display: none !important;
+            }
+
+            .mobile-actions {
+                display: flex !important;
+                gap: 15px;
+                flex-wrap: wrap;
+                margin-top: 25px;
+                justify-content: center;
+            }
+        }
+
+        .mobile-actions {
+            display: none;
+        }
+
+        .company-link {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+            transition: all 0.2s;
+        }
+
+        .company-link:hover {
+            color: var(--primary-glow);
+            border-bottom-color: var(--primary-glow);
+        }
+
+        /* --- SOCIAL BUTTONS --- */
+        .social-section {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            font-size: 2rem;
+            color: #fff;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            text-decoration: none;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--primary-glow);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 243, 255, 0.2);
+        }
+
+        .social-caption {
+            display: block;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #888;
+            margin-top: 5px;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: 0.3s;
+        }
+
+        .social-wrapper:hover .social-caption {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
 </head>
 
@@ -560,7 +663,7 @@
         </div>
 
         <!-- Separate Contact Button to match reference -->
-        <div style="display: flex; gap: 10px; pointer-events: auto;">
+        <div class="nav-extras" style="display: flex; gap: 10px; pointer-events: auto;">
             <a href="resources/cv_rafal_zielinski_java_software_developer.pdf" target="_blank" class="download-btn"
                 data-i18n="nav_download">
                 <span>↓</span> Download CV
@@ -597,6 +700,16 @@
                 and applying emerging technologies, including Generative AI (LLM/RAG), to solve complex enterprise
                 problems.
             </p>
+
+            <!-- Mobile Actions (Visible only on mobile via CSS) -->
+            <div class="mobile-actions">
+                <a href="resources/cv_rafal_zielinski_java_software_developer.pdf" target="_blank" class="download-btn"
+                    data-i18n="nav_download">
+                    <span>↓</span> Download CV
+                </a>
+                <a href="mailto:rafal.zielinskii@outlook.com" class="contact-btn" data-i18n="nav_contact"
+                    style="background:transparent; color:#fff; border:1px solid rgba(255,255,255,0.2)">Contact Me</a>
+            </div>
         </div>
 
         <!-- Main Content Grid -->
@@ -709,7 +822,7 @@
 
                     <!-- Kafka (Custom Icon or Apache) -->
                     <div class="tech-card">
-                        <i class="devicon-apachekafka-original colored tech-icon"></i>
+                        <i class="devicon-apachekafka-plain tech-icon"></i>
                         <div class="tech-info">
                             <span class="tech-name">Kafka</span>
                             <span class="tech-type">Messaging</span>
@@ -765,6 +878,24 @@
             </div>
         </div>
 
+        <!-- Social Links Section -->
+        <div class="social-section">
+            <div class="social-wrapper">
+                <a href="https://github.com/rafalz94" target="_blank" class="social-btn">
+                    <i class="devicon-github-original"></i>
+                </a>
+                <span class="social-caption">GitHub</span>
+            </div>
+
+            <div class="social-wrapper">
+                <a href="https://www.linkedin.com/in/rafa%C5%82-zieli%C5%84ski-7092a8b5/" target="_blank"
+                    class="social-btn">
+                    <i class="devicon-linkedin-plain"></i>
+                </a>
+                <span class="social-caption">LinkedIn</span>
+            </div>
+        </div>
+
         <!-- Contact Section -->
         <h3 class="section-title" style="text-align: center; display: block; border: none;" data-i18n="section_contact">
             Contact Details</h3>
@@ -778,9 +909,6 @@
             <span class="contact-item">
                 <span>📍</span> Kraków, Poland
             </span>
-            <a href="https://linkedin.com/in/rafal_zielinski" target="_blank" class="contact-item">
-                <span>🔗</span> LinkedIn
-            </a>
         </div>
 
         <div class="footer-consent" data-i18n="footer_copy">
