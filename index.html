@@ -332,7 +332,6 @@
             padding: 0 20px;
             gap: 20px;
             pointer-events: none;
-            /* Let clicks pass through around the pills */
         }
 
         .nav-pill {
@@ -363,7 +362,6 @@
             background: rgba(255, 255, 255, 0.05);
         }
 
-        /* Active state style */
         .nav-item.active {
             background: #fff;
             color: #000;
@@ -420,7 +418,6 @@
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
         }
 
-        /* Adjust layout to make room for fixed header */
         .cv-container {
             margin-top: 80px;
         }
@@ -509,7 +506,6 @@
             font-size: 2rem;
             min-width: 40px;
             text-align: center;
-            /* Default icon color fallback */
             color: #ccc;
         }
 
@@ -701,7 +697,7 @@
                 problems.
             </p>
 
-            <!-- Mobile Actions (Visible only on mobile via CSS) -->
+            <!-- Mobile Actions -->
             <div class="mobile-actions">
                 <a href="resources/cv_rafal_zielinski_java_software_developer.pdf" target="_blank" class="download-btn"
                     data-i18n="nav_download">
@@ -756,26 +752,11 @@
 
         <!-- Skills & Education Grid -->
         <div class="grid-2">
-            <!-- Full width skills for the requested look, typically this might be better separate 
-                 but keeping in grid-2 structure means it shares column with education. 
-                 Actually, looking at the layout, grid-2 splits the page in half. 
-                 The screenshot implies a wide section. 
-                 Let's keep it in the half-width card for now but make it look premium 
-                 OR move Skills OUT of grid-2 to be full width. 
-                 User asked to "move to right section". 
-                 The current layout is: 
-                 [ Profile ]
-                 [ Experience (Top Half) ]
-                 [ Skills | Education ] 
-                 If I make Skills look like the screenshot, it takes space.
-                 Let's replace the CURRENT "Technical Skills" block content 
-                 with the new card layout. It will just be a vertical list of cards in 2 columns inside that half-width block.
-                 -->
+            <!-- Full width skills for the requested look -->
             <div class="glass-card" id="skills">
                 <h3 class="section-title" data-i18n="section_skills">Technical Skills</h3>
 
                 <div class="tech-grid">
-                    <!-- Java -->
                     <div class="tech-card">
                         <i class="devicon-java-plain colored tech-icon"></i>
                         <div class="tech-info">
@@ -784,7 +765,6 @@
                         </div>
                     </div>
 
-                    <!-- Spring -->
                     <div class="tech-card">
                         <i class="devicon-spring-original colored tech-icon"></i>
                         <div class="tech-info">
@@ -793,7 +773,6 @@
                         </div>
                     </div>
 
-                    <!-- PostgreSQL -->
                     <div class="tech-card">
                         <i class="devicon-postgresql-plain colored tech-icon"></i>
                         <div class="tech-info">
@@ -802,7 +781,6 @@
                         </div>
                     </div>
 
-                    <!-- Docker -->
                     <div class="tech-card">
                         <i class="devicon-docker-plain colored tech-icon"></i>
                         <div class="tech-info">
@@ -811,7 +789,6 @@
                         </div>
                     </div>
 
-                    <!-- Kubernetes -->
                     <div class="tech-card">
                         <i class="devicon-kubernetes-plain colored tech-icon"></i>
                         <div class="tech-info">
@@ -820,7 +797,6 @@
                         </div>
                     </div>
 
-                    <!-- Kafka (Custom Icon or Apache) -->
                     <div class="tech-card">
                         <i class="devicon-apachekafka-plain tech-icon"></i>
                         <div class="tech-info">
@@ -829,7 +805,6 @@
                         </div>
                     </div>
 
-                    <!-- Python -->
                     <div class="tech-card">
                         <i class="devicon-python-plain colored tech-icon"></i>
                         <div class="tech-info">
@@ -838,7 +813,6 @@
                         </div>
                     </div>
 
-                    <!-- Azure/Cloud -->
                     <div class="tech-card">
                         <i class="devicon-azure-plain colored tech-icon"></i>
                         <div class="tech-info">
@@ -1051,29 +1025,10 @@
             elements.forEach(el => {
                 const key = el.getAttribute('data-i18n');
                 if (translations[currentLang][key]) {
-                    // Start of workaround: If element has HTML inside (like bold tags in list),
-                    // we might need a more complex structure, but for this CV pure text replacement 
-                    // or innerHTML with bold tags in the translation string is safer.
-                    // For now, I've kept translation strings plain for descriptions, 
-                    // but we might lose the <strong> tags in job descriptions if we just use innerText.
-                    // I will use innerHTML to support basic formatting if needed, 
-                    // but my translation map above is mostly plain text.
-                    // Let's ensure the translation strings generally match expected rendering.
-                    el.innerText = translations[currentLang][key];
+                    el.innerHTML = translations[currentLang][key];
                 }
             });
-
-            // Special handling for job description list items to preserve formatting if we wanted rigid exactness,
-            // but innerText is 'safe'. 
-            // Note: Job 1 Desc 2 has <strong> tags in the original HTML.
-            // My translation map above removed them for simplicity. 
-            // If strict HTML formatting is needed in translations, we should use innerHTML 
-            // and include <strong> in the translation strings.
-            // Let's do that quickly for the bold parts to be perfect.
         }
-
-        // Init
-        // (Optional) Check browser language or local storage here
     </script>
 </body>
 
