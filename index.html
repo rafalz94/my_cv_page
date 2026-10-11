@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 
 <head>
     <!-- Google tag (gtag.js) -->
@@ -13,8 +13,8 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafał Zieliński - Java Software Developer</title>
-    <meta name="description" content="Portfolio i CV - Rafał Zieliński, Java Software Developer & DevOps Enthusiast">
+    <title>Rafał Zieliński – Full-Stack Software Developer</title>
+    <meta name="description" content="CV & portfolio of Rafał Zieliński – Full-Stack Software Developer (Java, Spring, Apache Camel, React / Next.js), B2B integrations & AI.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -656,16 +656,6 @@
     </style>
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WJMC51KD8Z"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-WJMC51KD8Z');
-</script>
-
 <body>
 
     <!-- Floating Navigation -->
@@ -674,12 +664,12 @@
             <a href="#" class="nav-item" data-i18n="nav_home">Home</a>
             <a href="#profile" class="nav-item active" data-i18n="nav_about">About</a>
             <a href="#experience" class="nav-item" data-i18n="nav_exp">Experience</a>
+            <a href="#projects" class="nav-item" data-i18n="nav_projects">Projects</a>
             <a href="#skills" class="nav-item" data-i18n="nav_skills">Skills</a>
         </div>
 
-        <!-- Separate Contact Button to match reference -->
         <div class="nav-extras" style="display: flex; gap: 10px; pointer-events: auto;">
-            <a href="resources/cv_rafal_zielinski_java_software_developer.pdf" target="_blank" class="download-btn"
+            <a href="resources/cv_rafal_zielinski_full_stack_developer.pdf" target="_blank" class="download-btn"
                 data-i18n="nav_download">
                 <span>↓</span> Download CV
             </a>
@@ -698,27 +688,23 @@
         <header>
             <img src="resources/photo.png" alt="Rafał Zieliński" class="profile-photo">
             <h1>Rafał Zieliński</h1>
-            <h2 class="role-title" data-i18n="role">Java Software Developer</h2>
-
-
+            <h2 class="role-title" data-i18n="role">Full-Stack Software Developer · Integrations &amp; AI</h2>
         </header>
 
         <!-- Profile Section -->
         <div class="glass-card" id="profile">
             <h3 class="section-title" data-i18n="section_profile">Profile Summary</h3>
             <p style="font-size: 1.1rem; color: #ddd;" data-i18n="profile_text">
-                Highly motivated Software Engineer with 3+ years of professional experience in the Java ecosystem.
-                I specialize in delivering clean, well-tested code and driving the full software development
-                lifecycle—from
-                robust CI/CD automation to expert production monitoring. My core focus is on enhancing system
-                reliability
-                and applying emerging technologies, including Generative AI (LLM/RAG), to solve complex enterprise
-                problems.
+                Full-stack Software Developer with 4+ years of commercial experience – Java, Spring and Apache Camel
+                on the backend, React / Next.js on the frontend. In Transporeon's (Trimble) Enterprise Integration team
+                I build customer-specific B2B data exchange interfaces and mappings between EDIFACT, SAP IDoc, ANSI X12,
+                XML, CSV and JSON – from estimation to go-live and 3rd-level support. I lead the team's AI initiatives
+                and I'm in the final semester of a Computer Science degree in Cybersecurity.
             </p>
 
             <!-- Mobile Actions -->
             <div class="mobile-actions">
-                <a href="resources/cv_rafal_zielinski_java_software_developer.pdf" target="_blank" class="download-btn"
+                <a href="resources/cv_rafal_zielinski_full_stack_developer.pdf" target="_blank" class="download-btn"
                     data-i18n="nav_download">
                     <span>↓</span> Download CV
                 </a>
@@ -727,51 +713,93 @@
             </div>
         </div>
 
-        <!-- Main Content Grid -->
+        <!-- Experience -->
         <div class="glass-card" id="experience">
             <h3 class="section-title" data-i18n="section_exp">Work Experience</h3>
 
             <div style="margin-bottom: 40px;">
                 <div class="job-header">
-                    <h4 class="job-title" data-i18n="job1_title">Software Developer</h4>
+                    <h4 class="job-title" data-i18n="job1_title">Software Developer / Junior Software Developer</h4>
                     <span class="company-meta">
                         <a href="https://www.transporeon.com/en" target="_blank" class="company-link">TRANSPOREON
-                            (Trimble Transportation)</a>
-                        | 07.2022 – Present
+                            (Trimble)</a>
+                        | <span data-i18n="job1_dates">07.2022 – Present</span>
                     </span>
                 </div>
                 <ul class="job-list">
-                    <li data-i18n="job1_desc1">Deliver reliable software solutions for enterprise clients within the
-                        Enterprise Integration Department.</li>
-                    <li data-i18n="job1_desc2">Develop and maintain applications using <strong style="color:white">Java,
-                            Spring, and Apache Camel</strong>.</li>
-                    <li data-i18n="job1_desc3">Write comprehensive unit and integration tests (JUnit 5, Mockito) to
-                        ensure code quality.</li>
-                    <li data-i18n="job1_desc4">Own end-to-end <strong style="color:white">CI/CD pipelines</strong>,
-                        ensuring smooth deployment and robust observability (Elasticsearch, Grafana).</li>
-                    <li data-i18n="job1_desc5">Provide expert 3rd-level support, handling incident management and
-                        complex production troubleshooting.</li>
-                    <li data-i18n="job1_desc6">Conduct in-depth code reviews and refactoring of legacy code.</li>
+                    <li data-i18n="job1_desc1">Build customer-specific <strong style="color:white">B2B integrations</strong> on Transporeon's Exchange Platform (XP) – a data exchange hub connecting shippers, carriers, forwarders and retailers with their ERP/TMS systems (e.g. SAP, Blue Yonder TMS).</li>
+                    <li data-i18n="job1_desc2">Analyse source and target structures and create mappings from <strong style="color:white">EDIFACT, SAP IDoc, ANSI X12, CSV, XML and JSON</strong> to standard interfaces using XSLT/XPath, Velocity, Java and Apache Camel.</li>
+                    <li data-i18n="job1_desc3">Apply critical thinking to mapping design: edge cases, data validation, enrichment from Master Data tables and logic reusable across customers.</li>
+                    <li data-i18n="job1_desc4">Own delivery end-to-end: effort estimation, task review, implementation, unit tests, INT/ACC testing, PROD release, go-live and hyper-care.</li>
+                    <li data-i18n="job1_desc5">Work in a structured, ticket-based process (Jira) with clean technical documentation, in close cooperation with Professional Services, QA and Support.</li>
+                    <li data-i18n="job1_desc6">3rd-level support: root-cause analysis of failed messages and mapping errors using logs and Kibana.</li>
+                </ul>
+            </div>
+
+            <div style="margin-bottom: 40px;">
+                <div class="job-header">
+                    <h4 class="job-title" data-i18n="job_ai_title">AI Initiatives Lead – Enterprise Integration</h4>
+                    <span class="company-meta" data-i18n="job_ai_meta">TRANSPOREON (Trimble) | parallel role</span>
+                </div>
+                <ul class="job-list">
+                    <li data-i18n="job_ai_desc1">Lead the team's AI initiatives: research and evaluate AI tools, define the standard toolchain (<strong style="color:white">Cursor agent skills &amp; rules, MCP servers</strong> for Jira, Git, logs, Maven) and roll it out.</li>
+                    <li data-i18n="job_ai_desc2">Introduced an AI code-review quality gate (Bugbot), pilot Spec-Driven Development and drive automation (Jira-triggered bots, automated deployment).</li>
+                    <li data-i18n="job_ai_desc3">Authored the AI cybersecurity policy and ISO / SOC 2 documentation; run trainings and the team's AI knowledge base.</li>
+                </ul>
+            </div>
+
+            <div style="margin-bottom: 40px;">
+                <div class="job-header">
+                    <h4 class="job-title" data-i18n="job_fl_title">Web Developer (part-time, remote)</h4>
+                    <span class="company-meta" data-i18n="job_fl_meta">FREELANCE | 2024 – Present</span>
+                </div>
+                <ul class="job-list">
+                    <li data-i18n="job_fl_desc1">Freelance web development since 2024 – websites for small businesses and local organisations, from requirements and design to deployment, hosting and maintenance.</li>
+                    <li data-i18n="job_fl_desc2">Stack: <strong style="color:white">Next.js / React, TypeScript, Tailwind CSS</strong>, HTML / CSS / JavaScript, WordPress; AI-assisted development (Cursor, Claude Code).</li>
                 </ul>
             </div>
 
             <div>
                 <div class="job-header">
                     <h4 class="job-title" data-i18n="job2_title">Trainee Software Developer</h4>
-                    <span class="company-meta">TRANSPOREON & SDA | 01.2022 – 06.2022</span>
+                    <span class="company-meta">TRANSPOREON &amp; SDA | 01.2022 – 06.2022</span>
                 </div>
                 <ul class="job-list">
-                    <li data-i18n="job2_desc1">Completed an intensive full-stack programming course focused on Java
-                        ecosystem best practices.</li>
-                    <li data-i18n="job2_desc2">Gained hands-on experience in Agile methodologies and software
-                        development lifecycles.</li>
+                    <li data-i18n="job2_desc1">Intensive Java full-stack programme run with Transporeon, leading directly into the Enterprise Integration team.</li>
                 </ul>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="glass-card" id="projects">
+            <h3 class="section-title" data-i18n="section_projects">Engineering Thesis Project</h3>
+            <div class="job-header">
+                <h4 class="job-title">StockSim</h4>
+                <span class="company-meta" data-i18n="proj_meta">Engineering thesis | WSZiB Kraków</span>
+            </div>
+            <p style="font-style: italic; color: #ddd;" data-i18n="proj_title">„Design and implementation of a
+                microservice-based investment decision support system using stream processing and machine
+                learning”</p>
+            <ul class="job-list">
+                <li data-i18n="proj_desc1">Event-driven microservices in <strong style="color:white">Java 21 / Spring Boot</strong> (API Gateway, Eureka discovery) streaming live market data (Finnhub API) through <strong style="color:white">Apache Kafka</strong>.</li>
+                <li data-i18n="proj_desc2"><strong style="color:white">Python / FastAPI</strong> ML service with a PyTorch LSTM model generating real-time BUY / HOLD / SELL signals, exposing health and Prometheus metrics.</li>
+                <li data-i18n="proj_desc3">Real-time <strong style="color:white">Next.js + Tailwind</strong> dashboard fed via WebSocket (STOMP); whole stack containerised with Docker Compose.</li>
+            </ul>
+            <div style="margin-top: 10px;">
+                <span class="skill-tag">Java 21</span>
+                <span class="skill-tag">Spring Boot</span>
+                <span class="skill-tag">Kafka</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">FastAPI</span>
+                <span class="skill-tag">PyTorch</span>
+                <span class="skill-tag">Next.js</span>
+                <span class="skill-tag">WebSocket</span>
+                <span class="skill-tag">Docker</span>
             </div>
         </div>
 
         <!-- Skills & Education Grid -->
         <div class="grid-2">
-            <!-- Full width skills for the requested look -->
             <div class="glass-card" id="skills">
                 <h3 class="section-title" data-i18n="section_skills">Technical Skills</h3>
 
@@ -780,7 +808,7 @@
                         <i class="devicon-java-plain colored tech-icon"></i>
                         <div class="tech-info">
                             <span class="tech-name">Java</span>
-                            <span class="tech-type">Language</span>
+                            <span class="tech-type">Backend</span>
                         </div>
                     </div>
 
@@ -789,6 +817,54 @@
                         <div class="tech-info">
                             <span class="tech-name">Spring Boot</span>
                             <span class="tech-type">Framework</span>
+                        </div>
+                    </div>
+
+                    <div class="tech-card">
+                        <span class="tech-icon">⇄</span>
+                        <div class="tech-info">
+                            <span class="tech-name">Apache Camel</span>
+                            <span class="tech-type">Integration</span>
+                        </div>
+                    </div>
+
+                    <div class="tech-card">
+                        <i class="devicon-nextjs-plain tech-icon"></i>
+                        <div class="tech-info">
+                            <span class="tech-name">React / Next.js</span>
+                            <span class="tech-type">Frontend</span>
+                        </div>
+                    </div>
+
+                    <div class="tech-card">
+                        <i class="devicon-typescript-plain colored tech-icon"></i>
+                        <div class="tech-info">
+                            <span class="tech-name">TypeScript</span>
+                            <span class="tech-type">Language</span>
+                        </div>
+                    </div>
+
+                    <div class="tech-card">
+                        <i class="devicon-tailwindcss-original colored tech-icon"></i>
+                        <div class="tech-info">
+                            <span class="tech-name">Tailwind CSS</span>
+                            <span class="tech-type">Styling</span>
+                        </div>
+                    </div>
+
+                    <div class="tech-card">
+                        <i class="devicon-xml-plain tech-icon"></i>
+                        <div class="tech-info">
+                            <span class="tech-name">XSLT / XPath</span>
+                            <span class="tech-type">Mapping</span>
+                        </div>
+                    </div>
+
+                    <div class="tech-card">
+                        <i class="devicon-apachekafka-plain tech-icon"></i>
+                        <div class="tech-info">
+                            <span class="tech-name">Kafka</span>
+                            <span class="tech-type">Messaging</span>
                         </div>
                     </div>
 
@@ -809,51 +885,42 @@
                     </div>
 
                     <div class="tech-card">
-                        <i class="devicon-kubernetes-plain colored tech-icon"></i>
-                        <div class="tech-info">
-                            <span class="tech-name">Kubernetes</span>
-                            <span class="tech-type">Orchestration</span>
-                        </div>
-                    </div>
-
-                    <div class="tech-card">
-                        <i class="devicon-apachekafka-plain tech-icon"></i>
-                        <div class="tech-info">
-                            <span class="tech-name">Kafka</span>
-                            <span class="tech-type">Messaging</span>
-                        </div>
-                    </div>
-
-                    <div class="tech-card">
                         <i class="devicon-python-plain colored tech-icon"></i>
                         <div class="tech-info">
                             <span class="tech-name">Python</span>
-                            <span class="tech-type">Scripting/AI</span>
+                            <span class="tech-type">Scripting / ML</span>
                         </div>
                     </div>
 
                     <div class="tech-card">
-                        <i class="devicon-azure-plain colored tech-icon"></i>
+                        <span class="tech-icon">✦</span>
                         <div class="tech-info">
-                            <span class="tech-name">Azure / GCP</span>
-                            <span class="tech-type">Cloud</span>
+                            <span class="tech-name">Cursor · Claude Code</span>
+                            <span class="tech-type">AI / MCP</span>
                         </div>
                     </div>
+                </div>
 
-                    <div class="tech-card">
-                        <i class="devicon-javascript-plain colored tech-icon"></i>
-                        <div class="tech-info">
-                            <span class="tech-name">JavaScript</span>
-                            <span class="tech-type">Language</span>
-                        </div>
+                <div class="skills-grid" style="margin-top: 25px;">
+                    <div class="skill-group">
+                        <h4 data-i18n="skill_edi">EDI &amp; Data Formats</h4>
+                        <span class="skill-tag">EDIFACT</span>
+                        <span class="skill-tag">ANSI X12</span>
+                        <span class="skill-tag">SAP IDoc</span>
+                        <span class="skill-tag">XML / XSD</span>
+                        <span class="skill-tag">JSON</span>
+                        <span class="skill-tag">CSV</span>
                     </div>
-
-                    <div class="tech-card">
-                        <i class="devicon-react-original colored tech-icon"></i>
-                        <div class="tech-info">
-                            <span class="tech-name">React / Angular</span>
-                            <span class="tech-type">Frontend</span>
-                        </div>
+                    <div class="skill-group">
+                        <h4 data-i18n="skill_tools">Quality &amp; Tools</h4>
+                        <span class="skill-tag">JUnit</span>
+                        <span class="skill-tag">Mockito</span>
+                        <span class="skill-tag">Kibana</span>
+                        <span class="skill-tag">Grafana</span>
+                        <span class="skill-tag">Jira</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Maven</span>
+                        <span class="skill-tag">GCP / Azure</span>
                     </div>
                 </div>
             </div>
@@ -862,10 +929,11 @@
                 <div class="glass-card">
                     <h3 class="section-title" data-i18n="section_edu">Education</h3>
                     <div style="margin-bottom: 10px;">
-                        <strong style="font-size: 1.1rem; color: #fff;" data-i18n="edu_school">WSZIB Kraków</strong><br>
-                        <span style="color: var(--primary-glow)" data-i18n="edu_degree">Computer Science (In
-                            progress)</span><br>
-                        <small data-i18n="edu_spec">Specialization: Cybersecurity</small>
+                        <strong style="font-size: 1.1rem; color: #fff;" data-i18n="edu_school">WSZiB Kraków</strong><br>
+                        <span style="color: var(--primary-glow)" data-i18n="edu_degree">Computer Science (Engineer) –
+                            final semester</span><br>
+                        <small data-i18n="edu_spec">Specialization: Cybersecurity · thesis defence planned for early
+                            2027</small>
                     </div>
                 </div>
 
@@ -879,16 +947,21 @@
                                 <strong>AI Devs 2:</strong> LLMOps, RAG
                             </a>
                         </li>
-                        <li><strong>Google Cloud:</strong> Big Data & ML Fundamentals</li>
-                        <li><strong>Google Cloud:</strong> Intro to Kubernetes Engine</li>
                         <li><strong>SDA:</strong> Java Software Developer</li>
+                        <li><strong>SDA:</strong> Clean Code &amp; Advanced Refactoring</li>
+                        <li><strong>Google Cloud:</strong> Core Infrastructure, Big Data &amp; ML, GKE</li>
+                        <li><strong>IBCU:</strong> Data Analysis with Python &amp; Pandas</li>
                     </ul>
                 </div>
 
                 <div class="glass-card">
-                    <h3 class="section-title" data-i18n="section_hobbies">Hobbies</h3>
-                    <p data-i18n="hobby_text">Sports (Squash, Tennis, Padel), New Technologies, AI & Cybersecurity,
-                        Electronics/Automatics.</p>
+                    <h3 class="section-title" data-i18n="section_lang">Languages</h3>
+                    <p data-i18n="lang_text">Polish – native · English – C1 (daily work language)</p>
+                </div>
+
+                <div class="glass-card">
+                    <h3 class="section-title" data-i18n="section_hobbies">Interests</h3>
+                    <p data-i18n="hobby_text">AI, cybersecurity, electronics &amp; automation, squash, tennis, padel.</p>
                 </div>
             </div>
         </div>
@@ -927,7 +1000,7 @@
         </div>
 
         <div class="footer-consent" data-i18n="footer_copy">
-            @2025 Rafał Zieliński
+            © 2026 Rafał Zieliński
         </div>
 
     </div>
@@ -938,113 +1011,138 @@
 
         const translations = {
             en: {
-                // Nav
                 nav_home: "Home",
                 nav_about: "About",
                 nav_exp: "Experience",
+                nav_projects: "Projects",
                 nav_skills: "Skills",
                 nav_contact: "Contact Me",
                 nav_download: "↓ Download CV",
 
-                // Header
-                role: "Java Software Developer / DevOps",
+                role: "Full-Stack Software Developer · Integrations &amp; AI",
 
-                // Profile
                 section_profile: "Profile Summary",
-                profile_text: "Highly motivated Software Engineer with 3+ years of professional experience in the Java ecosystem. I specialize in delivering clean, well-tested code and driving the full software development lifecycle—from robust CI/CD automation to expert production monitoring. My core focus is on enhancing system reliability and applying emerging technologies, including Generative AI (LLM/RAG), to solve complex enterprise problems.",
+                profile_text: "Full-stack Software Developer with 4+ years of commercial experience – Java, Spring and Apache Camel on the backend, React / Next.js on the frontend. In Transporeon's (Trimble) Enterprise Integration team I build customer-specific B2B data exchange interfaces and mappings between EDIFACT, SAP IDoc, ANSI X12, XML, CSV and JSON – from estimation to go-live and 3rd-level support. I lead the team's AI initiatives and I'm in the final semester of a Computer Science degree in Cybersecurity.",
 
-                // Experience
                 section_exp: "Work Experience",
                 job1_title: "Software Developer / Junior Software Developer",
-                job1_desc1: "Deliver reliable software solutions for enterprise clients within the Enterprise Integration Department.",
-                job1_desc2: "Develop and maintain applications using Java, Spring, and Apache Camel.",
-                job1_desc3: "Write comprehensive unit and integration tests (JUnit 5, Mockito) to ensure code quality.",
-                job1_desc4: "Own end-to-end CI/CD pipelines, ensuring smooth deployment and robust observability (Elasticsearch, Grafana).",
-                job1_desc5: "Provide expert 3rd-level support, handling incident management and complex production troubleshooting.",
-                job1_desc6: "Conduct in-depth code reviews and refactoring of legacy code.",
+                job1_desc1: "Build customer-specific <strong style=\"color:white\">B2B integrations</strong> on Transporeon's Exchange Platform (XP) – a data exchange hub connecting shippers, carriers, forwarders and retailers with their ERP/TMS systems (e.g. SAP, Blue Yonder TMS).",
+                job1_desc2: "Analyse source and target structures and create mappings from <strong style=\"color:white\">EDIFACT, SAP IDoc, ANSI X12, CSV, XML and JSON</strong> to standard interfaces using XSLT/XPath, Velocity, Java and Apache Camel.",
+                job1_desc3: "Apply critical thinking to mapping design: edge cases, data validation, enrichment from Master Data tables and logic reusable across customers.",
+                job1_desc4: "Own delivery end-to-end: effort estimation, task review, implementation, unit tests, INT/ACC testing, PROD release, go-live and hyper-care.",
+                job1_desc5: "Work in a structured, ticket-based process (Jira) with clean technical documentation, in close cooperation with Professional Services, QA and Support.",
+                job1_desc6: "3rd-level support: root-cause analysis of failed messages and mapping errors using logs and Kibana.",
+
+                job1_dates: "07.2022 – Present",
+                job_ai_title: "AI Initiatives Lead – Enterprise Integration",
+                job_ai_meta: "TRANSPOREON (Trimble) | parallel role",
+                job_ai_desc1: "Lead the team's AI initiatives: research and evaluate AI tools, define the standard toolchain (<strong style=\"color:white\">Cursor agent skills &amp; rules, MCP servers</strong> for Jira, Git, logs, Maven) and roll it out.",
+                job_ai_desc2: "Introduced an AI code-review quality gate (Bugbot), pilot Spec-Driven Development and drive automation (Jira-triggered bots, automated deployment).",
+                job_ai_desc3: "Authored the AI cybersecurity policy and ISO / SOC 2 documentation; run trainings and the team's AI knowledge base.",
+
+                job_fl_title: "Web Developer (part-time, remote)",
+                job_fl_meta: "FREELANCE | 2024 – Present",
+                job_fl_desc1: "Freelance web development since 2024 – websites for small businesses and local organisations, from requirements and design to deployment, hosting and maintenance.",
+                job_fl_desc2: "Stack: <strong style=\"color:white\">Next.js / React, TypeScript, Tailwind CSS</strong>, HTML / CSS / JavaScript, WordPress; AI-assisted development (Cursor, Claude Code).",
 
                 job2_title: "Trainee Software Developer",
-                job2_desc1: "Completed an intensive full-stack programming course focused on Java ecosystem best practices.",
-                job2_desc2: "Gained hands-on experience in Agile methodologies and software development lifecycles.",
+                job2_desc1: "Intensive Java full-stack programme run with Transporeon, leading directly into the Enterprise Integration team.",
 
-                // Skills
+                section_projects: "Engineering Thesis Project",
+                proj_meta: "Engineering thesis | WSZiB Kraków",
+                proj_title: "„Design and implementation of a microservice-based investment decision support system using stream processing and machine learning”",
+                proj_desc1: "Event-driven microservices in <strong style=\"color:white\">Java 21 / Spring Boot</strong> (API Gateway, Eureka discovery) streaming live market data (Finnhub API) through <strong style=\"color:white\">Apache Kafka</strong>.",
+                proj_desc2: "<strong style=\"color:white\">Python / FastAPI</strong> ML service with a PyTorch LSTM model generating real-time BUY / HOLD / SELL signals, exposing health and Prometheus metrics.",
+                proj_desc3: "Real-time <strong style=\"color:white\">Next.js + Tailwind</strong> dashboard fed via WebSocket (STOMP); whole stack containerised with Docker Compose.",
+
                 section_skills: "Technical Skills",
-                skill_backend: "Backend",
-                skill_data: "Data",
-                skill_devops: "DevOps",
-                skill_emerging: "Emerging",
+                skill_edi: "EDI &amp; Data Formats",
+                skill_tools: "Quality &amp; Tools",
 
-                // Education & Certs
                 section_edu: "Education",
-                edu_school: "WSZIB Kraków",
-                edu_degree: "Computer Science (In progress)",
-                edu_spec: "Specialization: Cybersecurity",
+                edu_school: "WSZiB Kraków",
+                edu_degree: "Computer Science (Engineer) – final semester",
+                edu_spec: "Specialization: Cybersecurity · thesis defence planned for early 2027",
                 section_certs: "Certificates",
 
-                // Hobbies
-                section_hobbies: "Hobbies",
-                hobby_text: "Sports (Squash, Tennis, Padel), New Technologies, AI & Cybersecurity, Electronics/Automatics.",
+                section_lang: "Languages",
+                lang_text: "Polish – native · English – C1 (daily work language)",
 
-                // Contact
+                section_hobbies: "Interests",
+                hobby_text: "AI, cybersecurity, electronics &amp; automation, squash, tennis, padel.",
+
                 section_contact: "Contact Details",
-                footer_copy: "@2025 Rafał Zieliński"
+                footer_copy: "© 2026 Rafał Zieliński"
             },
             pl: {
-                // Nav
                 nav_home: "Start",
                 nav_about: "O mnie",
                 nav_exp: "Doświadczenie",
+                nav_projects: "Projekty",
                 nav_skills: "Umiejętności",
                 nav_contact: "Kontakt",
                 nav_download: "↓ Pobierz CV",
 
-                // Header
-                role: "Programista Java / DevOps",
+                role: "Full-Stack Software Developer · Integracje i AI",
 
-                // Profile
                 section_profile: "Profil Zawodowy",
-                profile_text: "Wysoce zmotywowany Inżynier Oprogramowania z ponad 3-letnim doświadczeniem w ekosystemie Java. Specjalizuję się w dostarczaniu czystego, dobrze przetestowanego kodu i prowadzeniu pełnego cyklu rozwoju oprogramowania — od solidnej automatyzacji CI/CD po ekspercki monitoring produkcji. Skupiam się na zwiększaniu niezawodności systemów i wdrażaniu nowych technologii, w tym generatywnej sztucznej inteligencji (LLM/RAG), do rozwiązywania złożonych problemów korporacyjnych.",
+                profile_text: "Full-stack Software Developer z ponad 4-letnim doświadczeniem komercyjnym – Java, Spring i Apache Camel po stronie backendu, React / Next.js po stronie frontendu. W zespole Enterprise Integration w Transporeon (Trimble) buduję dedykowane interfejsy wymiany danych B2B oraz mapowania między EDIFACT, SAP IDoc, ANSI X12, XML, CSV i JSON – od estymacji, przez wdrożenie, po wsparcie 3. linii. Prowadzę inicjatywy AI w zespole i jestem na ostatnim semestrze studiów inżynierskich z Informatyki (Cyberbezpieczeństwo).",
 
-                // Experience
                 section_exp: "Doświadczenie Zawodowe",
-                job1_title: "Programista Java",
-                job1_desc1: "Dostarczanie niezawodnych rozwiązań programistycznych dla klientów korporacyjnych w Dziale Enterprise Integration.",
-                job1_desc2: "Rozwój i utrzymanie aplikacji przy użyciu Java, Spring i Apache Camel.",
-                job1_desc3: "Pisanie kompleksowych testów jednostkowych i integracyjnych (JUnit 5, Mockito) w celu zapewnienia jakości kodu.",
-                job1_desc4: "Zarządzanie CI/CD end-to-end, zapewnienie płynnego wdrażania i solidnej obserwowalności (Elasticsearch, Grafana).",
-                job1_desc5: "3rd level support, obsługa incydentów i rozwiązywanie złożonych problemów produkcyjnych.",
-                job1_desc6: "Przeprowadzanie szczegółowych przeglądów kodu i refaktoryzacja starego kodu.",
+                job1_title: "Software Developer / Junior Software Developer",
+                job1_desc1: "Budowa dedykowanych <strong style=\"color:white\">integracji B2B</strong> na Exchange Platform (XP) – hubie wymiany danych łączącym spedytorów, przewoźników i sieci handlowe z ich systemami ERP/TMS (np. SAP, Blue Yonder TMS).",
+                job1_desc2: "Analiza struktur źródłowych i docelowych oraz tworzenie mapowań z <strong style=\"color:white\">EDIFACT, SAP IDoc, ANSI X12, CSV, XML i JSON</strong> do interfejsów standardowych (XSLT/XPath, Velocity, Java, Apache Camel).",
+                job1_desc3: "Krytyczne podejście do projektowania mapowań: przypadki brzegowe, walidacja danych, wzbogacanie z tabel Master Data i logika wielokrotnego użytku.",
+                job1_desc4: "Odpowiedzialność za pełen cykl dostarczenia: estymacja, przegląd zadań, implementacja, testy jednostkowe, testy INT/ACC, wydanie na PROD, go-live i hyper-care.",
+                job1_desc5: "Uporządkowana praca na ticketach (Jira) z rzetelną dokumentacją techniczną, w ścisłej współpracy z Professional Services, QA i Supportem.",
+                job1_desc6: "Wsparcie 3. linii: analiza przyczyn błędnych komunikatów i mapowań na podstawie logów i Kibany.",
 
-                job2_title: "Staż - Programista Java",
-                job2_desc1: "Ukończenie intensywnego kursu programowania full-stack skoncentrowanego na najlepszych praktykach ekosystemu Java.",
-                job2_desc2: "Zdobycie praktycznego doświadczenia w metodykach Agile i cyklach rozwoju oprogramowania.",
+                job1_dates: "07.2022 – obecnie",
+                job_ai_title: "Lider inicjatyw AI – Enterprise Integration",
+                job_ai_meta: "TRANSPOREON (Trimble) | rola równoległa",
+                job_ai_desc1: "Prowadzę inicjatywy AI w zespole: research i ocena narzędzi, zdefiniowanie standardowego zestawu narzędzi (<strong style=\"color:white\">skille i reguły Cursora, serwery MCP</strong> dla Jiry, Gita, logów, Mavena) i jego wdrożenie.",
+                job_ai_desc2: "Wprowadzenie bramki jakości z AI code review (Bugbot), pilotaż Spec-Driven Development oraz automatyzacje (boty wyzwalane z Jiry, automatyczne wdrożenia).",
+                job_ai_desc3: "Autor polityki cyberbezpieczeństwa dla AI oraz dokumentacji ISO / SOC 2; szkolenia i baza wiedzy AI zespołu.",
 
-                // Skills
+                job_fl_title: "Web Developer (part-time, zdalnie)",
+                job_fl_meta: "FREELANCE | 2024 – obecnie",
+                job_fl_desc1: "Od 2024 roku tworzę strony www dla małych firm i lokalnych organizacji – od wymagań i projektu po wdrożenie, hosting i utrzymanie.",
+                job_fl_desc2: "Stack: <strong style=\"color:white\">Next.js / React, TypeScript, Tailwind CSS</strong>, HTML / CSS / JavaScript, WordPress; development wspierany AI (Cursor, Claude Code).",
+
+                job2_title: "Stażysta – Software Developer",
+                job2_desc1: "Intensywny program Java full-stack prowadzony z Transporeon, zakończony dołączeniem do zespołu Enterprise Integration.",
+
+                section_projects: "Projekt Inżynierski",
+                proj_meta: "Praca inżynierska | WSZiB Kraków",
+                proj_title: "„Projekt i implementacja mikroserwisowego systemu wspomagania decyzji inwestycyjnych z wykorzystaniem przetwarzania strumieniowego i metod uczenia maszynowego”",
+                proj_desc1: "Mikroserwisy sterowane zdarzeniami w <strong style=\"color:white\">Java 21 / Spring Boot</strong> (API Gateway, Eureka) przesyłające dane giełdowe na żywo (Finnhub API) przez <strong style=\"color:white\">Apache Kafka</strong>.",
+                proj_desc2: "Serwis ML w <strong style=\"color:white\">Python / FastAPI</strong> z modelem LSTM (PyTorch) generującym sygnały BUY / HOLD / SELL w czasie rzeczywistym, z metrykami Prometheus.",
+                proj_desc3: "Dashboard <strong style=\"color:white\">Next.js + Tailwind</strong> aktualizowany na żywo przez WebSocket (STOMP); całość skonteneryzowana w Docker Compose.",
+
                 section_skills: "Umiejętności Techniczne",
-                skill_backend: "Backend",
-                skill_data: "Dane",
-                skill_devops: "DevOps",
-                skill_emerging: "Nowe Technologie",
+                skill_edi: "EDI i formaty danych",
+                skill_tools: "Jakość i narzędzia",
 
-                // Education & Certs
                 section_edu: "Edukacja",
-                edu_school: "WSZIB Kraków",
-                edu_degree: "Informatyka (W toku)",
-                edu_spec: "Specjalizacja: Cyberbezpieczeństwo",
+                edu_school: "WSZiB Kraków",
+                edu_degree: "Informatyka (inżynier) – ostatni semestr",
+                edu_spec: "Specjalizacja: Cyberbezpieczeństwo · obrona planowana na początek 2027",
                 section_certs: "Certyfikaty",
 
-                // Hobbies
-                section_hobbies: "Zainteresowania",
-                hobby_text: "Sport (Squash, Tenis, Padel), Nowe Technologie, AI i Cyberbezpieczeństwo, Elektronika/Automatyka.",
+                section_lang: "Języki",
+                lang_text: "Polski – ojczysty · Angielski – C1 (codzienny język pracy)",
 
-                // Contact
+                section_hobbies: "Zainteresowania",
+                hobby_text: "AI, cyberbezpieczeństwo, elektronika i automatyka, squash, tenis, padel.",
+
                 section_contact: "Dane Kontaktowe",
-                footer_copy: "@2025 Rafał Zieliński"
+                footer_copy: "© 2026 Rafał Zieliński"
             }
         };
 
         function toggleLanguage() {
             currentLang = currentLang === 'en' ? 'pl' : 'en';
+            document.documentElement.lang = currentLang;
             updateContent();
             updateSwitcherUI();
         }
